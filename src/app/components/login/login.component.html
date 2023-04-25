@@ -1,0 +1,44 @@
+<div class="body-background">
+    <div class="center">
+      <img class="logo" src="assets/logo2.png" alt="SmartUP" width="280px" height="75px" >
+      <form method="post">
+      <!-- <form [formGroup]="loginForm" (ngSubmit)="goToDashboard()"> -->
+        <div class="txt_field">
+          <input type="text" formControlName="cin" required>
+          <span></span>
+          <label>Numéro CIN</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" formControlName="password" required>
+          <span></span>
+          <label>Mot de passe</label>
+        </div>
+        <div class="pass">Mot de passe oublié?</div><br>
+        <input type="submit" value="Login" (click)="goToDashboard()">
+        <!-- <button type="submit" [disabled]="loginForm.invalid">Login</button> -->
+        <div class="signup_link">
+          Vous avez un problème? <br> <a class="button" href="#divOne">Nous Contacter</a>
+        </div>
+      </form>
+    </div>
+</div>
+
+
+<div class="overlay" id="divOne">
+  <div class="wrapper">
+    <h2>Please Fill up The Form</h2><a class="close" href="#">&times;</a>
+    <div class="content">
+      <div class="container">
+        <form>
+          <label>First Name</label>
+          <input placeholder="Your name.." type="text">
+          <label>Email</label>
+          <input placeholder="Email" type="text">
+          <label>Problème</label> 
+          <textarea iplaceholder="Write something.."></textarea>
+          <input class="subbtn" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
